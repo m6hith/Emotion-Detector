@@ -30,7 +30,7 @@ function WebCapture({ setResults, setLoading }) {
       setLoading(true);
       try {
         const response = await axios.post(
-          "https://emotion-detection-backend-drwx.onrender.com/analyze",
+          "https://emotion-detection-backend-drwx.onrender.com/analyze/",
           formData
         );
         setResults(response.data);
