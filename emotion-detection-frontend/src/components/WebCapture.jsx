@@ -25,7 +25,7 @@ function WebCapture({ setResults, setLoading }) {
 
     canvas.toBlob(async (blob) => {
       const formData = new FormData();
-      formData.append("image", blob, "snapshot.jpg");
+      formData.append("file", blob, "snapshot.jpg");
 
       setLoading(true);
       try {
