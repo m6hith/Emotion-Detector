@@ -42,7 +42,7 @@ const App = () => {
       const formData = new FormData();
       formData.append("file", blob, "capture.jpg");
 
-      const response = await fetch("https://emotion-detection-backend-drwx.onrender.com", {
+      const response = await fetch("https://emotion-detection-backend-drwx.onrender.com/analyze", {
         method: "POST",
         body: formData,
       });
