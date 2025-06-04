@@ -3,4 +3,4 @@ uvicorn
 deepface
 pillow
 numpy
-    
+tf-keras
